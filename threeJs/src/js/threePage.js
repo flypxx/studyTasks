@@ -30,7 +30,7 @@ function createCar(scene, renderer) {
 
   // 设置立方体
   var cube = new THREE.Mesh(new THREE.CubeGeometry(6, 4, 8),
-    new THREE.MeshBasicMaterial({
+    new THREE.MeshLambertMaterial({
       color: 0xdedede
     })
   );
@@ -38,7 +38,7 @@ function createCar(scene, renderer) {
 
   // 设置两个圆柱体
   var cylinder1 = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, 10, 18, 3),
-    new THREE.MeshBasicMaterial({
+    new THREE.MeshLambertMaterial({
       color: 0xbcbcbc
     })
   );
@@ -46,7 +46,7 @@ function createCar(scene, renderer) {
   cylinder1.rotateZ(Math.PI / 2);
   scene.add(cylinder1);
   var cylinder2 = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, 10, 18, 3),
-    new THREE.MeshBasicMaterial({
+    new THREE.MeshLambertMaterial({
       color: 0xbcbcbc
     })
   );
